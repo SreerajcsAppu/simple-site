@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Welcome</title>
+	<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+	<script type="text/javascript">
+		function func(){
+
+			document.getElementById('para1').innerHTML =''
+           var user =document.getElementById('name').value
+           let pattern = /sreeram/i;
+           let pattern2 = /raman/i;
+
+           if (user !== '') {
+           let result1 = user.match(pattern);
+           let result2 = user.match(pattern2);
+            
+           if (result1 || result2) {
+           console.log(user)
+           document.getElementById('main').innerHTML ='<div class="mx-auto" >  <h1 class="text-center my-4 py-4"> Sugam Ano </h1> <img style="height: 200px;width: 30%;" src="https://c8.alamy.com/comp/2BWXADT/emoticon-with-silly-eyes-2BWXADT.jpg"> <img style="height: 200px;width: 30%; " src="https://thumbs.dreamstime.com/b/crazy-emoji-crazy-fooling-around-emoji-face-tongue-out-271858174.jpg"> <img style="height: 200px;width: 30%; " src="https://tse2.mm.bing.net/th?id=OIP.S6CQkfMf3-2hyKDni3P5OAHaEK&pid=Api&P=0&h=180">            <div style="width:80%; height: 200px;" class="my-4 pt-4 bg-dark text-center mx-auto">		<h1 class="text-light text-center ">How is it ...</h1>  <img style="height: 100px;width: 30%; " src="https://tse3.mm.bing.net/th?id=OIP.aHrgWEvTXBsDrzCG1abWBQHaHN&pid=Api&P=0&h=180">	</div></div>'
+       }else{
+       	console.log(typeof(user))
+            window.location.href = 
+                "https://www.amazon.in/b?ref=FZ_game_end_topical&node=14351766031";
+           // document.getElementById('para1').innerHTML ='user'
+       }
+           
+       }else{
+          document.getElementById('para1').innerHTML ='please enter your name'
+		}
+       }
+	</script>
+	<!--navbar starts-->
+	
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand text-muted" href="#">Click & Get</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+         <ul class="navbar-nav mr-auto">
+           <li class="nav-item active">
+             <a class="nav-link" href="#">Home </a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">About</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">Contact</a>
+           </li>
+         </ul>
+         <span class="navbar-text">
+         Logged in as a Username
+         </span>
+      </div>
+  </nav>
+<!--navbar ends-->
+<div class="container">
+  <div class="container pb-5" style="margin-top: 100px; border-radius: 40px; border:1px black solid; background-color: tomato; box-shadow: black 20px 20px 20px; width: 80%;">
+  	<div class="row">
+      <div id="main" class="col-10 mx-auto" >
+      	<h1 class="text-center mt-4 pt-4" style="color: mediumblue;
+            font-size: xxx-large;">Enter your name </h1>
+      	<h2 class="text-center mt-4" style="color: aliceblue;">See Magic</h2>
+      	<!-- <form class="text-center mt-4 p-3" style="border :green solid "> -->
+      	<div class="text-center mt-4 pt-4 bg-light mx-auto" style="border :black solid; max-width: 600px; "> 
+      	   <input id="name" type="text" name="user" placeholder="your name"><br>
+      		<button class="mt-4 btn btn-primary" onclick="func()">click</button>
+      		<p class="bg-warning m-2" id="para1"></p>
+      	</div>	
+      		
+      	<!-- </form> -->
+      </div>
+  	</div>
+  	
+  </div>
+   </div> 
+</body>
+</html>
